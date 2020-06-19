@@ -3,72 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="contact-styles.css">
   <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./../index.html">Home</a>
-            <a>Resume</a> 
-            <a href="./../portfolio-projects/portfolio.html">Portfolio</a>
-            <a href="./../about/about.html">About Me</a> 
-            <a>My Blog</a> 
-            <a href="contact.html">Contact Me</a>
-        </nav>
+        <div class="topnav">
+            <div id="myLinks"> 
+                <a href="./../index.html">Home</a>
+                <a>Resume</a> 
+                <a href="./../portfolio-projects/portfolio.html">Portfolio</a>
+                <a href="./../about/about.html">About Me</a> 
+                <a>My Blog</a> 
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
+    <Main>
+        <h1>Let's keep in touch!</h1>
         <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        <div>
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone">
-        </div>
-        <div>
-            Would you like me to send you a birthday wish on your birthday? If so, please fill out your birthday below. 
-            <div>
-                <label for="date">Birthdate</label>
-                <input type="date" name="date" id="date">
-             </div>
-        </div>
-        <div>
-            How did you hear about me?
-            <div>
-                <label for="classmate">Classmate</label>
-                <input type="checkbox" name="classmate" id="classmate">
-            </div>
-            <div>
-                <label for="resume-submission">Resume Submission</label>
-                <input type="checkbox" name="resume-submission" id="resume-submission">
-            </div>
-            <div>
-                <label for="linkedIn">LinkedIn</label>
-                <input type="checkbox" name="linkedIn" id="linkedIn">
-            </div>
-            <div>
-                <label for="codingAcademyRec">Coding Academy Rec</label>
-                <input type="checkbox" name="codingAcademyRec" id="codingAcademyRec">
-            </div>
-        </div>
-        <div>
-            <label for ="yes_no_radio">Would you like me to contact you?
-            </label>
+            <form action="results.html" method="GET" enctype="multipart/form-data">
                 <div>
-                    <input type="radio" name="yes_no" id="yes" value="yes">Yes</input>
-                    <input type="radio" name="yes_no" id="no" value="no">No</input>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
                 </div>
-        <div>
-            <label for="message">Message</label>
-            <textarea maxlength="50" cols="35" rows="10" id="message" name="message" placeholder="comments"></textarea>
-        </div>
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-  </form>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                </div> <br>
+                <div>
+                    <p>How did you hear about me?</p>
+                    <div>
+                        <label for="classmate">Classmate</label>
+                        <input type="checkbox" name="classmate" id="classmate">
+                    </div>
+                    <div>
+                        <label for="resume-submission">Resume Submission</label>
+                        <input type="checkbox" name="resume-submission" id="resume-submission">
+                    </div>
+                    <div>
+                        <label for="linkedIn">LinkedIn</label>
+                        <input type="checkbox" name="linkedIn" id="linkedIn">
+                    </div>
+                    <div>
+                        <label for="codingAcademyRec">Coding Academy Rec</label>
+                        <input type="checkbox" name="codingAcademyRec" id="codingAcademyRec">
+                    </div>
+                </div> <br>
+                <div>
+                    <label for ="yes_no_radio">Would you like me to contact you?
+                    </label>
+                        <div>
+                            <input type="radio" class= "yes_no" name="yes_no" id="yes" value="yes">Yes</input>
+                            <input type="radio" class= "yes_no" name="yes_no" id="no" value="no">No</input>
+                        </div>
+                <div> <br>
+                    <div>
+                        <p>Would you like me to send you a birthday wish on your birthday? If so, please fill out your birthday below.</p>
+                        <div> <br>
+                            <label for="date">Birthdate</label> <br>
+                            <input type="date" name="date" id="date">
+                        </div>
+                    </div> <br>
+                    <label for="message">Message</label> <br> <br>
+                    <textarea maxlength="50" cols="35" rows="10" id="message" name="message" placeholder="comments"></textarea>
+                </div>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>  
+    </Main>
+<script src="scripts.js"></script>
 </body>
 </html>
