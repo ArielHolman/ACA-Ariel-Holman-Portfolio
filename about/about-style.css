@@ -104,5 +104,55 @@ h3 {
   grid-row: 2/3;
 }
 
+@media screen and (min-width: 600px) {
+  .title {
+    font-size: 20px;
+    height: 500px;
+  }
 
+  h1{
+    padding-top: 170pt;
+  }
+}
 
+@media screen and (min-width: 1200px) {
+    .title {
+    font-size: 40pt;
+    height: 500px;
+  }
+
+  h1{
+    padding-top: 150pt;
+  }
+
+  .story-title {
+    font-size: 35pt;
+  }
+
+  .story-paragraph {
+    font-size: 20pt;
+    padding-right: 20pt;
+    padding-left: 30pt;
+    padding-bottom: 25pt;
+  }
+
+  .two {
+    padding-bottom: 80pt;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  h3 {
+    display: flex;
+    justify-content: first baseline;
+    font-size: 35pt;
+  }
+
+  .smlinks{
+    display: flex;
+    justify-content: last baseline;
+  }
+}
