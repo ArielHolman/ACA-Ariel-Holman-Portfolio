@@ -1,12 +1,12 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: black;  
+    background-color: white;  
     margin: 0;  
 }
 
 .topnav {
     overflow: hidden;
-    background-color: white;
+    background-color:white;
     position: relative;
 }
     
@@ -27,48 +27,68 @@ body {
     
   /* Style the hamburger menu */
 .topnav a .icon {
-    background: gray;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
+    margin: 20pt;
 }
   
   /* Add a grey background color on mouse-over*/
 .topnav a:hover {
     background-color: white;
-    color: gray;
+    color: black;
 }
 
-h1 {
-      color: white;
-      text-align: center;
-      margin: 20pt;
-      background-color: black;
-}
-
-main {
-    background-image:url("./image/contact-image.jpg");
+.form {
+    margin-top: 10pt;
     background-position: center center;
     background-size: 100%;
     font-size: 10pt;
     background-color: transparent;
-    color: white;
+    color: black;
     background-repeat: no-repeat;
-    margin-left: 5pt;
     height: 400px;
     padding-top: 10pt;
 }
 
-label {
-    background-color: black;
+.topBanner {
+    background-image:url("./image/contact-image.jpg");
+    width: 100%;
+    height: 150pt;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .7;
+    display: flex;
+    align-items: center;
 }
+
+h1 {
+    margin-left: 5pt;
+    text-align: left;
+    margin-right: 120pt;
+    background-color: black;
+    color: white;
+    font-size: 15pt;
+  }
 
 p {
-    background-color: black;
-    margin: 0 150pt 0 0;
+    margin: 0 50pt 0 0;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.checkBox{
+    list-style:none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
 
 /* nav > a {
     margin: 2% 1% 3%;

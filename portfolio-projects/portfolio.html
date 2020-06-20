@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="portfolio-styles.css">
     <title>Portfolio</title>
 </head>
 <body>
     <h1>Be mindful of the energy you exert</h1>
     <header>
-        <nav>
-            <a href="./../index.html">Home</a>
-            <a>Resume</a> 
-            <a href="portfolio.html">Portfolio</a>
-            <a href="./../about/about.html">About Me</a> 
-            <a>My Blog</a> 
-            <a href="./../contact/contact.html">Contact Me</a>
-        </nav>
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="./../index.html">Home</a>
+                <a>Resume</a> 
+                <a href="portfolio.html">Portfolio</a>
+                <a href="./../about/about.html">About Me</a> 
+                <a>My Blog</a> 
+                <a href="./../contact/contact.html">Contact Me</a>
+            </div>
+        </div> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
     <main>
        <div class="row">
@@ -139,5 +145,6 @@
             </div>
         </div> 
     </main>
+    <script src="scripts.js"></script>
 </body>
 </html>

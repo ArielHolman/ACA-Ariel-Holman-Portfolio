@@ -65,4 +65,40 @@ padding: 0 5pt;
         flex: 100%;
         max-width: 100%;
     }
+
+    .topnav {
+        overflow: hidden;
+        background-color:white;
+        position: relative;
+    }
+        
+      /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+        
+      /* Style navigation menu links */
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-align: right;
+    }
+        
+      /* Style the hamburger menu */
+    .topnav a .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 20pt;
+    }
+      
+      /* Add a grey background color on mouse-over*/
+    .topnav a:hover {
+        background-color: white;
+        color: black;
+    }
 } 
