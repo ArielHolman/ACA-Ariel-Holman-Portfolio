@@ -15,13 +15,13 @@
                 <a>Resume</a> 
                 <a href="./../portfolio-projects/portfolio.html">Portfolio</a>
                 <a href="./../about/about.html">About Me</a> 
-                <a>My Blog</a> 
+                <a href="https://medium.com/@arielaholman01">My Blog</a>
                 <a href="contact.html">Contact Me</a>
             </div>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-        </a>
+            </a>
+        </div>
     </header>
     <Main>
         <div class="topBanner">
@@ -31,53 +31,52 @@
         <div class ="form">
             <form action="results.html" method="GET" enctype="multipart/form-data">
                 <div>
-                    <label for="name">Name</label>
+                    <label for="name" class="contactInfo"><strong>Name</strong></label>
                     <input type="text" name="name" id="name" required>
                 </div>
+                <br>
                 <div>
-                    <label for="email">Email</label>
+                    <label for="email"class="contactInfo-two"><strong>Email</strong></label>
                     <input type="email" name="email" id="email" required>
                 </div>
+                <br>
                 <div>
-                    <label for="phone">Phone</label>
+                    <label for="phone" class="contactInfo contactInfo-three"><strong>Phone</strong></label>
                     <input type="tel" name="phone" id="phone">
-                </div> <br>
+                </div> 
+                <br>
+                <p><strong>How did you hear about me?</strong></p>
+                    <div class="checkbox">
+                        <input type="checkbox" id="heardfrom1" name="heardfrom1" value="heardfrom1">
+                        <label for="heardfrom1"> Classmate</label><br>
+                        <input type="checkbox" id="heardfrom2" name="heardfrom2" value="resume">
+                        <label for="heardfrom2"> Resume Submission</label><br>
+                        <input type="checkbox" id="heardfrom3" name="heardfrom3" value="linkedin">
+                        <label for="heardfrom3"> LinkedIn</label><br>
+                        <input type="checkbox" id="heardfrom4" name="heardfrom4" value="coding">
+                        <label for="heardfrom3"> Coding Academy Rec</label><br>
+                    </div> 
+                <br>
                 <div>
-                    <p>How did you hear about me?</p>
-                    <div>
-                        <label for="classmate">Classmate</label>
-                        <input type="checkbox" name="classmate" id="classmate">
-                    </div>
-                    <div>
-                        <label class ="checkBox" for="resume-submission">Resume Submission</label>
-                        <input class ="checkmark" type="checkbox" name="resume-submission" id="resume-submission">
-                    </div>
-                    <div>
-                        <label for="linkedIn">LinkedIn</label>
-                        <input type="checkbox" name="linkedIn" id="linkedIn">
-                    </div>
-                    <div>
-                        <label for="codingAcademyRec">Coding Academy Rec</label>
-                        <input type="checkbox" name="codingAcademyRec" id="codingAcademyRec">
-                    </div>
-                </div> <br>
-                <div>
-                    <label for ="yes_no_radio">Would you like me to contact you?
+                    <label for ="yes_no_radio"> <strong>Would you like me to contact you?</strong>
                     </label>
                         <div>
                             <input type="radio" class= "yes_no" name="yes_no" id="yes" value="yes">Yes</input>
                             <input type="radio" class= "yes_no" name="yes_no" id="no" value="no">No</input>
                         </div>
-                <div> <br>
+                <div> 
+                    <br>
                     <div>
                         <p>Would you like me to send you a birthday wish on your birthday? If so, please fill out your birthday below.</p>
-                        <div> <br>
-                            <label for="date">Birthdate</label> <br>
+                        <div class="bday"> <br>
+                            <label for="date"><strong>Birthdate</strong></label> 
+                            <br>
                             <input type="date" name="date" id="date">
                         </div>
                     </div> <br>
-                    <label for="message">Message</label> <br> <br>
-                    <textarea maxlength="50" cols="35" rows="10" id="message" name="message" placeholder="comments"></textarea>
+                    <label for="message"><strong>Message</strong></label>
+                    <br>
+                    <textarea maxlength="50" cols="33" rows="10" id="message" name="message" placeholder="comments"></textarea>
                 </div>
                 <button type="reset">Reset</button>
                 <button type="submit">Submit</button>
