@@ -95,6 +95,12 @@ h1 {
   justify-items: center;
 }
 
+a:visited {
+  color: rgba(241, 10, 153, 0.938);
+  background-color: transparent;
+  text-decoration: none;
+}
+
 h3 {
   grid-row: 1/2;
   font-size: 20pt;

@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="topnav">
-            <div id="myLinks"> 
+            <div id="myLinks" class="has-border"> 
                 <a href="./../index.html">Home</a>
                 <a>Resume</a> 
                 <a href="./../portfolio-projects/portfolio.html">Portfolio</a>
@@ -23,66 +23,75 @@
             </a>
         </div>
     </header>
-    <Main>
+    <main>
         <div class="topBanner">
             <h1>Let's keep in touch!</h1>
             <div class="image"></div>
-        </div>
-        <div class ="form">
-            <form action="results.html" method="GET" enctype="multipart/form-data">
-                <div>
-                    <label for="name" class="contactInfo"><strong>Name</strong></label>
-                    <input type="text" name="name" id="name" required>
-                </div>
-                <br>
-                <div>
-                    <label for="email"class="contactInfo-two"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <br>
-                <div>
-                    <label for="phone" class="contactInfo contactInfo-three"><strong>Phone</strong></label>
-                    <input type="tel" name="phone" id="phone">
-                </div> 
-                <br>
-                <p><strong>How did you hear about me?</strong></p>
-                    <div class="checkbox">
-                        <input type="checkbox" id="heardfrom1" name="heardfrom1" value="heardfrom1">
-                        <label for="heardfrom1"> Classmate</label><br>
-                        <input type="checkbox" id="heardfrom2" name="heardfrom2" value="resume">
-                        <label for="heardfrom2"> Resume Submission</label><br>
-                        <input type="checkbox" id="heardfrom3" name="heardfrom3" value="linkedin">
-                        <label for="heardfrom3"> LinkedIn</label><br>
-                        <input type="checkbox" id="heardfrom4" name="heardfrom4" value="coding">
-                        <label for="heardfrom3"> Coding Academy Rec</label><br>
-                    </div> 
-                <br>
-                <div>
-                    <label for ="yes_no_radio"> <strong>Would you like me to contact you?</strong>
-                    </label>
-                        <div>
-                            <input type="radio" class= "yes_no" name="yes_no" id="yes" value="yes">Yes</input>
-                            <input type="radio" class= "yes_no" name="yes_no" id="no" value="no">No</input>
-                        </div>
-                <div> 
-                    <br>
-                    <div>
-                        <p>Would you like me to send you a birthday wish on your birthday? If so, please fill out your birthday below.</p>
-                        <div class="bday"> <br>
-                            <label for="date"><strong>Birthdate</strong></label> 
-                            <br>
-                            <input type="date" name="date" id="date">
-                        </div>
-                    </div> <br>
-                    <label for="message"><strong>Message</strong></label>
-                    <br>
-                    <textarea maxlength="50" cols="33" rows="10" id="message" name="message" placeholder="comments"></textarea>
-                </div>
-                <button type="reset">Reset</button>
-                <button type="submit">Submit</button>
-            </form>
         </div>  
-    </Main>
+        <form class="form" action="results.html" method="GET" enctype="multipart/form-data">
+            <div class="name">
+                <label for="name" class="contactInfo"><strong>Name</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <br>
+            <div class="email">
+                <label for="email"class="contactInfo-two"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div class="phone">
+                <label for="phone" class="contactInfo contactInfo-three"><strong>Phone</strong></label>
+                <input type="tel" name="phone" id="phone">
+            </div> 
+            <br>
+            <div class="checkbox">
+                <p><strong>How did you hear about me?</strong></p>
+                <input type="checkbox" id="heardfrom1" name="heardfrom1" value="heardfrom1">
+                <label for="heardfrom1"> Classmate</label><br>
+                <input type="checkbox" id="heardfrom2" name="heardfrom2" value="resume">
+                <label for="heardfrom2"> Resume Submission</label><br>
+                <input type="checkbox" id="heardfrom3" name="heardfrom3" value="linkedin">
+                <label for="heardfrom3"> LinkedIn</label><br>
+                <input type="checkbox" id="heardfrom4" name="heardfrom4" value="coding">
+                <label for="heardfrom3"> Coding Academy Rec</label><br>
+            </div> 
+            <br>
+            <div class="callback">
+                <label for ="yes_no_radio"> <strong>Would you like me to contact you?</strong></label>
+                 <br>
+                <input type="radio" class= "yes_no" name="yes_no" id="yes" value="yes">Yes</input>
+                <input type="radio" class= "yes_no" name="yes_no" id="no" value="no">No</input>
+            </div> 
+            <br>
+            <div class="birthday">
+                <p>Would you like me to send you a birthday wish on your birthday? If so, please fill out your birthday below.</p>
+                <br>
+                <label for="date"><strong>Birthdate</strong></label> 
+                <br>
+                <input type="date" name="date" id="date">
+            </div> 
+            <br>
+            <div class="message">
+                <label for="message"><strong>Message</strong></label>
+                <br>
+                <textarea maxlength="50" cols="33" rows="10" id="message" name="message" placeholder="comments"></textarea>
+            </div>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main> 
+    <footer class="footer">
+        <div >
+            <h3>#neverMissAThing</h2>
+        </div>
+        <div class="smLinks">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        </div>
+    </footer>
 <script src="scripts.js"></script>
 </body>
 </html>
